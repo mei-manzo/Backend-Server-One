@@ -1,4 +1,4 @@
-Welcome! This is the first backend server for the Rules/Apps solution. This server will be responsible for fetching our "Rules" automatically from the Management API and serving it to our frontend app. You will need to run both servers in order to render all the management data to the frontend client. Here is the link to the other server so you can download it and get started: https://github.com/mei-manzo/Backend-Server-Two.
+This is the first backend server for the Rules/Apps solution. This server will be responsible for fetching our "Rules" automatically from the Management API and serving it to our frontend app. You will need to run both servers in order to render all the management data to the frontend client. Here is the link to the other server so you can download it and get started: https://github.com/mei-manzo/Backend-Server-Two.
 
 
 Instructions:
