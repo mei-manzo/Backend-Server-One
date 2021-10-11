@@ -56,4 +56,4 @@ BASE_URL=http://localhost:7000
 
 SESSION_SECRET= "YOUR_SESSION_SECRET"
 
-Once you have configured your server, use "npm run dev" in your terminal and your server should begin sending your management API data over to the frontend app! Make sure that your server stays connected, otherwise you will be unable to access your data in the frontend. 
+Once you have configured your server, use "npm run dev" in your terminal and your server should begin sending your management API data over to the frontend app. Make sure that your server stays connected, otherwise you will be unable to access your data in the frontend. 
