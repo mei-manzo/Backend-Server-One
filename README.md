@@ -45,8 +45,13 @@ Also make sure to update your .env file with the following fields:
 
 
 DEV_PORT=7001
+
 PROD_PORT=7000
+
 AUTH0_ISSUER_BASE_URL="YOUR_DOMAIN"
+
 AUTH0_CLIENT_ID="YOUR_AUTH0_CLIENT_ID"
+
 BASE_URL=http://localhost:7000
+
 SESSION_SECRET= "YOUR_SESSION_SECRET"
