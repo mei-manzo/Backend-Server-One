@@ -343,6 +343,26 @@ const updateUI = async () => {
 //         console.log(xhr.responseText);
 //     }};
 
+////CLIENTS
+app.listen(2000, () => {
+    console.log(`Server is up and running on 2000 ...`);
+    });
+    
+app.get("/", (req, res) => {
+        let data = (localStorage.getItem("rules"));
+    res.send(data);
+});
+
+// xhr.send(data);
+var myUrl = "http://localhost:2000/";
+import XMLHttpRequest from "xhr2";
+
+var xhr = new XMLHttpRequest();
+xhr.open("POST", myUrl, true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+
+
+
 
 //just need to print json to the empty page
 // var data = `{
@@ -358,48 +378,33 @@ const updateUI = async () => {
 // const app = express();
 
 //try to print to this server
-//RULES
-app.listen(7000, () => {
-    console.log(`Server is up and running on 7000 ...`);
-    });
+
+
+
+
+
+
+// //RULES
+// app.listen(7000, () => {
+//     console.log(`Server is up and running on 7000 ...`);
+//     });
     
-app.get("/", (req, res) => {
+// app.get("/", (req, res) => {
     
-        let data = (localStorage.getItem("rules"));
+//         let data = (localStorage.getItem("rules"));
 
-    res.send(data);
-});
+//     res.send(data);
+// });
 
-// xhr.send(data);
-var myUrl = "http://localhost:7000/";
+// // xhr.send(data);
+// var myUrl = "http://localhost:7000/";
 
-import XMLHttpRequest from "xhr2";
-var value = "wow";
+// // import XMLHttpRequest from "xhr2";
 
-var xhr = new XMLHttpRequest();
-xhr.open("POST", myUrl, true);
-xhr.setRequestHeader('Content-Type', 'application/json');
-xhr.send(JSON.stringify(value));
+// var xhr = new XMLHttpRequest();
+// xhr.open("POST", myUrl, true);
+// xhr.setRequestHeader('Content-Type', 'application/json');
 
-////CLIENTS
-app.listen(7001, () => {
-    console.log(`Server is up and running on 7001 ...`);
-    });
-    
-app.get("/", (req, res) => {
-    
-        let data = (localStorage.getItem("clients"));
 
-    res.send(data);
-});
-
-// xhr.send(data);
-var myUrl = "http://localhost:7001/";
-
-var value = "wow";
-
-var xhr = new XMLHttpRequest();
-xhr.open("POST", myUrl, true);
-xhr.setRequestHeader('Content-Type', 'application/json');
-xhr.send(JSON.stringify(value));
-
+// import { f1 } from "./server2.js";
+// f1();
